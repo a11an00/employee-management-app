@@ -6,7 +6,34 @@
     <title>View Contacts - Employee Management App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body background="image/mainbackground.jpg">
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-contact.html">New Contact</a></li>
+                <li><a href="view-contacts.html">View Contacts</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div>
+        <h1>Employee Contacts</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>PHONE</th>
+                    <th>DEPARTMENT</th>
+                    <th>TOOLS</th>
+                </tr>
+            </thead>
+            <tbody id="contacts-table-body">
+                <!-- Contacts will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
