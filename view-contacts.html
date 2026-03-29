@@ -17,8 +17,8 @@
         </nav>
     </section>
     <div>
-        <h1>Employee Contacts</h1>
-        <table>
+        <h1 style="text-align: center;font-family: 'Times New Roman', Times, serif; font-size: 24px;">Employee Contacts</h1>
+        <table id="contacts-table">
             <thead>
                 <tr>
                     <th>NO</th>
@@ -26,14 +26,52 @@
                     <th>EMAIL</th>
                     <th>PHONE</th>
                     <th>DEPARTMENT</th>
-                    <th>TOOLS</th>
+                    <th rowspan="4">TOOLS</th>
                 </tr>
             </thead>
-            <tbody id="contacts-table-body">
-                <!-- Contacts will be dynamically inserted here -->
+            <tbody align="center" id="contacts-table-body">
+                <tr>
+                    <td>1</td>
+                    <td>Allan Smith</td>
+                    <td>allan.smith@example.com</td>
+                    <td>0712345678</td>
+                    <td>HR</td>
+                    <td>
+                        <button class="edit-btn" onclick="edit()"><img id="btn" src="image/editimage.png" alt="Edit"></button>
+                        <button class="delete-btn" onclick="deleteContact()"><img id="btn" src="image/deleteimage.png" alt="Delete"></button>
+                        <button class="view-btn" onclick="viewContact()"><img id="btn" src="image/viewimage.png" alt="View"></button>
+                    </td>
+  
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Doe</td>
+                    <td>jane.doe@example.com</td>
+                    <td>0798765432</td>
+                    <td>Finance</td>
+                    <td>
+                        <button class="edit-btn" onclick="edit()"><img id="btn"src="image/editimage.png" alt="Edit"></button>
+                        <button class="delete-btn" onclick="deleteContact()"><img id="btn"src="image/deleteimage.png" alt="Delete"></button>
+                        <button class="view-btn" onclick="viewContact()"><img id="btn"src="image/viewimage.png" alt="View"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Michael Johnson</td>
+                    <td>michael.johnson@example.com</td>
+                    <td>0701234567</td>
+                    <td>IT</td> 
+                    <td>
+                        <button class="edit-btn" onclick="edit()"><img id="btn"src="image/editimage.png" alt="Edit"></button>
+                        <button class="delete-btn" onclick="deleteContact()"><img id="btn"src="image/deleteimage.png" alt="Delete"></button>
+                        <button class="view-btn" onclick="viewContact()"><img id="btn"src="image/viewimage.png" alt="View"></button>
+                    </td>
+                    </tr>
+                    
+             
             </tbody>
         </table>
     </div>
-
+<script src="main.js"></script> 
 </body>
 </html>
