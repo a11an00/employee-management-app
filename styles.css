@@ -4,7 +4,7 @@
     font-size: 24px;
     margin-bottom: 20px;
 }
-#new-contact-form {
+#employeeForm {
     margin-bottom: 20px;
     width: 350px;
     height: 550px;
@@ -15,7 +15,7 @@
     background-color:rgba(223, 231, 234, 0.6);
     
     }
-#new-contact-form input {
+#employeeForm input {
     width: auto;
     padding: 8px;
     margin-bottom: 10px;
@@ -24,7 +24,7 @@
     text-align:left;
     align-content: right;
     }
-#new-contact-form label {
+#employeeForm label {
     text-align: left;
     align-content: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -96,24 +96,25 @@ nav a {
     font-size: 30px;
     margin-bottom: 20px;
 }
-body background {
+body  {
     background-size: cover;
     background-position: center;
 }
-#contacts-table {
+#employeeTable {
     width: 70%;
     margin: 0 auto;
     border-collapse: collapse;
     padding: 10px;
-    border: 1px solid #dfe7ea;
     border-radius: 5px;
     font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #dfe7ea;
+    border-radius: 5px;
+    background-color:rgba(223, 231, 234, 0.6);
 }
-#contacts-table th, #contacts-table td {
-    border: 1px solid black;
+#employeeTable th, #employeeTable td {
+    border: 1px solid #dfe7ea;
     padding: 8px;
-    text-align: left;
-    
+    text-align: left;   
 }
 #btn {
     background-color: transparent;
@@ -121,6 +122,12 @@ body background {
     cursor: pointer;
     margin-top: 10px;
     margin-left: 60px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+.btn{
+        cursor: pointer;
     height: 40px;
     width: 40px;
     border-radius: 50px;

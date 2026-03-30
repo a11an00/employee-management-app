@@ -17,22 +17,21 @@
         </nav>
     </section>
 
-
-    <h1 id="new-contact-title"><strong> Add New Contact</strong></h1>
-    <form id="new-contact-form">
+    <h1 id="new-contact-title"><strong>Add New Contact</strong></h1>
+    <form id="employeeForm">
         <h2>Contact Information</h2>
+
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required><br><br>
 
         <label for="lastname">Last Name:</label>
         <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required><br><br>
 
-        <label for="gender">Gender:</label>
+        <label>Gender:</label>
         <input type="radio" id="male" name="gender" value="male">
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label><br><br>
-
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
@@ -41,7 +40,7 @@
         <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX"><br><br>
 
         <label for="department">Department:</label>
-        <select>
+        <select id="department" name="department">
             <option value="hr">HR</option>
             <option value="it">IT</option>
             <option value="sales">Sales</option>
@@ -49,14 +48,14 @@
         </select><br><br>
 
         <label for="position">Position:</label>
-        <select>
+        <select id="position" name="position">
             <option value="manager">Manager</option>
             <option value="developer">Developer</option>
             <option value="designer">Designer</option>
         </select><br><br>
 
-        <button type="submit" onclick="addContact()"><image src="image/newuser2.png" alt="Add Contact"></button>
+        <button type="submit"><img src="image/newuser2.png" alt="Add Contact"></button>
     </form>
-<script src="main.js"></script> 
+    <script src="main.js"></script> 
 </body>
 </html>
